@@ -9,7 +9,8 @@ import (
 )
 
 func main() {
-	port := ""
+	port := "5000"
+
 	if port == "" {
 		log.Fatal("$PORT must be set")
 	}
