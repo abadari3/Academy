@@ -25,5 +25,21 @@ func main() {
 		c.HTML(http.StatusOK, "index.tmpl.html", nil)
 	})
 
+	router.GET("/2", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index2.tmpl.html", nil)
+	})
+
+	router.GET("/3", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index3.tmpl.html", nil)
+	})
+
+	router.GET("/4", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index4.tmpl.html", nil)
+	})
+
+	router.GET("/5", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index5.tmpl.html", nil)
+	})
+
 	router.Run(":" + port)
 }
